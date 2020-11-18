@@ -41,6 +41,7 @@ let default = (~showVersionSelect=true) => {
     ("ReasonReact", "https://reasonml.github.io/reason-react"),
     ("Reanalyze", "https://github.com/reason-association/reanalyze"),
   ]
+  let tools = [("Syntax Lookup", "/syntax-lookup")]
 
   let versionSelect = if showVersionSelect {
     let onChange = evt => {
@@ -67,6 +68,7 @@ let default = (~showVersionSelect=true) => {
     <div className="grid grid-cols-1 xs:grid-cols-2 gap-8">
       <Card title="Language Manual" hrefs=languageManual />
       <Card title="Ecosystem" hrefs=ecosystem />
+      <Card title="Tools" hrefs=tools />
     </div>
   </>
 }
